@@ -1,3 +1,9 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: Mindy
+ * @Date: 2023-09-01 16:29:15
+-->
 # Neo Governance
 
 The contract address that has been deployed on the Sepolia network
@@ -14,7 +20,7 @@ policyProxy:0xe9461e53921d213a26adacfc2ce8ac4427b1a013
 
 #### Test steps
 
-注：GroProxyAdmin 实现了检查并仅允许共识（治理）更新配置和升级合约的功能，我们需要在使用GroProxyAdmin 之前先部署一个标准的ProxyAdmin,然后在部署GovernanceProxy合约之后，再调用ProxyAdmin.changeProxyAdmin(Proxy,newAdmin)来更新GroProxyAdmin
+注：GroProxyAdmin 实现了检查并仅允许共识（治理）更新配置和升级合约的功能，我们需要在使用GroProxyAdmin 之前先部署一个标准的ProxyAdmin,然后在部署GovernanceProxy合约之后，再调用ProxyAdmin.changeProxyAdmin(Proxy.newAdmin)来更新GroProxyAdmin
 
 ##### 1.deploy ProxyAdmin contract
 
