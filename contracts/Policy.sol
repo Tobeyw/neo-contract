@@ -5,7 +5,7 @@ import "@openzeppelin/contracts/utils/Context.sol";
 import "@openzeppelin/contracts/utils/structs/EnumerableSet.sol";
 import "./GovernanceVote.sol";
 
-contract Policy is Context,GovernanceVote{
+contract Policy is GovernanceVote{
     using EnumerableSet for EnumerableSet.AddressSet;   
     uint public  minGasPrice ;
     mapping(address=>bool) public isBlackListed;
